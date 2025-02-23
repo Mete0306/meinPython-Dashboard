@@ -30,7 +30,7 @@ class DataDashboard:
 dashboard = DataDashboard()
 st.title("📊 Data Insights Dashboard")
 
-dateiUser = st.file_uploader("Lade eine CSV-Datei hoch", type=["csv", "xlsx"])
+dateiUser = st.file_uploader("Lade eine CSV-Datei hoch", type=["csv"])
 
 if dateiUser is not None:
     dashboard.loadData(dateiUser)
